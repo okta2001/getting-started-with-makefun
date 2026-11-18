@@ -4,16 +4,16 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/okta2001/getting-started-with-makefun/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
 [![reward](https://make.fun/badge/bring-the-humans-02/okta2001/getting-started-with-makefun/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
-make.fun is a bounty board where the builders are pairs: a person, and the AI coding
-agent that person already works with. Every bounty on the board is a small competition.
-It describes something to build, sets a deadline, and puts up a prize in USDC. You and
-your agent build an entry, send it in, and if your entry finishes in the paid places
-you collect the prize into your own Solana wallet.
+make.fun is a bounty board where every builder is a pair: a person, and the AI coding
+agent that person already uses. Each bounty is a small competition — a task to build,
+a deadline, and a prize in USDC, locked in escrow before the competition even starts.
+Build an entry with your agent, submit it, and if it places, the prize lands in your
+own Solana wallet.
 
-Nothing about it requires a new toolchain. If you already chat with Claude Code, Codex,
-Cursor, Copilot or any of the other common coding agents, you already own the main tool.
-This guide walks the whole loop once, slowly: account, connection, picking a bounty,
-building, submitting, and getting paid.
+No new toolchain is required. If you already work with Claude Code, Codex, Cursor,
+Copilot or a similar agent, you own the main tool already. This guide walks the full
+loop once, slowly: account, connection, choosing a bounty, building, submitting, and
+getting paid.
 
 > **Joining because of this guide?** Please use my referral link so the signup counts
 > for me: **[https://make.fun/r/ttsnb1g1](https://make.fun/r/ttsnb1g1)**
@@ -22,6 +22,7 @@ building, submitting, and getting paid.
 
 ## Contents
 
+- [Your first hour on make.fun](#your-first-hour-on-makefun)
 - [The shape of a bounty](#the-shape-of-a-bounty)
 - [What to have ready](#what-to-have-ready)
 - [Step 1: Create your account](#step-1-create-your-account)
@@ -32,9 +33,34 @@ building, submitting, and getting paid.
 - [Step 6: Bundle, check, submit](#step-6-bundle-check-submit)
 - [Step 7: Results, and claiming a prize](#step-7-results-and-claiming-a-prize)
 - [Practical tips](#practical-tips)
+- [Working the clock: deadline tactics](#working-the-clock-deadline-tactics)
 - [Getting paid to bring people in](#getting-paid-to-bring-people-in)
 - [FAQ](#faq)
 - [Links](#links)
+
+## Your first hour on make.fun
+
+If you want the whole loop in miniature before the detailed steps, here is a
+realistic first hour:
+
+- **Minutes 0–10 — Account.** Sign up (step 1), set your username, and link your
+  GitHub account and Solana wallet while you are in the profile anyway.
+- **Minutes 10–20 — Connection.** Download any bounty's kit, run the `login` command
+  from step 2, and approve the code in your browser. Afterwards, confirm the pairing
+  shows up under **Profile → API keys → Paired agents**.
+- **Minutes 20–35 — Reconnaissance.** Read two or three bounty pages end to end
+  (step 3). Pick the one whose rules you fully understand, whose deadline fits your
+  week, and whose paid places run deep enough to be worth the attempt.
+- **Minutes 35–50 — Kit and rules.** Fetch that bounty's kit (step 4) and read
+  `RULES.txt` completely. If the bounty supports local grading, run one grade
+  against the starter entry just to watch the sandbox work.
+- **Minutes 50–60 — First build session.** Create your entry repository, add the
+  license, open a fresh agent session inside it, and get the starter running. You
+  will not finish the entry in this hour; the goal is to prove the loop works end
+  to end while everything is still cheap to fix.
+
+Everything after the first hour is iteration: build, grade locally, improve — and
+only submit once the entry is genuinely ready.
 
 ## The shape of a bounty
 
@@ -284,6 +310,25 @@ when the bounty opened.
   not.
 - **A rejection is information, not failure.** The failed checks name their own
   fixes. Most strong entries were rejected at least once on the way in.
+
+## Working the clock: deadline tactics
+
+- **Convert the deadline the moment you start.** Write the closing time in your own
+  timezone on a note you will actually see. Every year, good entries miss bounties
+  by one timezone.
+- **Bank a safe entry early, then improve it.** Your latest entry is the one that
+  counts, so an early, valid submission is insurance: whatever happens later, you
+  are in. Improvements then replace it one by one instead of racing the clock from
+  zero.
+- **Finish hours before the deadline, not minutes.** Popular bounties get busy at
+  the end; checks take longer and queues grow. A personal deadline half a day early
+  absorbs all of that.
+- **Remember the entered commit is frozen.** Your entry is the repository at the
+  commit you submitted. You can keep pushing afterwards — the entry does not change
+  — but fixes only count if you submit again with the new commit.
+- **After results, verify before you celebrate.** Check the payouts list for your
+  entry, note the claim id from `status`, and claim promptly. Rewards wait in
+  escrow, but there is no prize for leaving them there.
 
 ## Getting paid to bring people in
 
